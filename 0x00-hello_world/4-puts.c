@@ -1,9 +1,12 @@
 #include<stdio.h>
 
-/* display text using puts */
-
-int main (){
-	puts("Programming is like building a multilingual puzzle \n");
-	return 0;
+/**
+* main - Entry point
+* display text using puts
+* Return: alwats 0 - success
+*/
+int main(void)
+{
+	puts("\"Programming is like building a multilingual puzzle \n");
+	return(0);
 }
-
