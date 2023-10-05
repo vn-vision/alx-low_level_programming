@@ -1,6 +1,7 @@
 #include <stdio.h>
+
 /**
-* main - Entry point 
+* main - Entry point
 * using size of input types in different systems
 * Return: always 0 (success) 
 */
