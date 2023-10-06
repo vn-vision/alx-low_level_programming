@@ -3,7 +3,7 @@
 /**
 * main -Entry point
 * print 0-9
-* Return 0 : (success)
+* Return: 0 (success)
 */
 
 int main(void)
