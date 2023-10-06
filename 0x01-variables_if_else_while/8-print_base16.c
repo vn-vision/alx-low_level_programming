@@ -9,6 +9,7 @@
 int main(void)
 {
 	char ltr;
+	int num;
 	
 	/* the CAP letters*/
 	num = 0;

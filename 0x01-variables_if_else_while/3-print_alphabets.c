@@ -2,29 +2,30 @@
 
 /**
 * main - Entry point
-* while loop to print a-zA-Z 
+* while loop to print a-zA-Z
 * putchar display the letters
 */
 
 int main(void)
 {
 	char ltr, _ltr;
+	
 	ltr = 'a';
 	_ltr = 'A';
 	
-	while(ltr <= 'z')
+	while (ltr <= 'z')
 	{
 		putchar(ltr);
 		ltr++;
 	}
 	
 	/* the CAP letters*/
-	while(_ltr <= 'Z')
+	while (_ltr <= 'Z')
 	{
 		putchar(_ltr);
 		_ltr++;
 	}
-	putchar('\n');
 	
+	putchar('\n');
 	return (0);
 }
