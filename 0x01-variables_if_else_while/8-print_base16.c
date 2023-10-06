@@ -14,20 +14,16 @@ int main(void)
 	/* the CAP letters*/
 	num = 0;
 	ltr = 'a';
-	
-	while(num <= 9)
+	while (num <= 9)
 	{
 		putchar(num + '0');
 		num++;
-	}
-	
-	
-	while(ltr <= 'f')
+	}	
+	while (ltr <= 'f')
 	{
 		putchar(ltr);
 		ltr++;
 	}
-	putchar('\n');
-	
+	putchar('\n');	
 	return (0);
 }

@@ -18,7 +18,6 @@ int main(void)
 		}
 		_qe++;
 	} while (_qe <= 'z');
-	
 	putchar('\n');
 	return (0);
 	}

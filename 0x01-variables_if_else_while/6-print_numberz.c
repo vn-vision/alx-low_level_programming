@@ -3,6 +3,7 @@
 /**
 * main - Entry point
 * while loop to print 0-9
+* Return: 0 (success)
 */
 
 int main(void)
@@ -11,11 +12,11 @@ int main(void)
 	
 	/* the numbers*/
 	num = 0;
-	
-	while(num <= 9)
+	while (num <= 9)
 	{
 		putchar(num + '0');
 		num++;
 	}
-	 return (0);
+	putchar('\n');
+	return (0);
 }
