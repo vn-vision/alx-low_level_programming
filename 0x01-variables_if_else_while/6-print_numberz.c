@@ -9,8 +9,7 @@
 int main(void)
 {
 	int num;
-	
-	/* the numbers*/
+
 	num = 0;
 	while (num <= 9)
 	{

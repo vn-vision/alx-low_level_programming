@@ -4,14 +4,14 @@
 * main - Entry point
 * while loop to print 0-9a-f base16
 * putchar display the letters
-* Return 0 (success)
+* Return : 0 (success)
 */
 
 int main(void)
 {
 	char ltr;
 	int num;
-	
+
 	/* the CAP letters*/
 	num = 0;
 	ltr = 'a';
@@ -25,6 +25,6 @@ int main(void)
 		putchar(ltr);
 		ltr++;
 	}
-	putchar('\n');	
+	putchar('\n');
 	return (0);
 }
