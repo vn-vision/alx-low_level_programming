@@ -4,6 +4,7 @@
 * main - Entry point
 * while loop to print a-zA-Z
 * putchar display the letters
+* Return: 0 (success)
 */
 
 int main(void)
