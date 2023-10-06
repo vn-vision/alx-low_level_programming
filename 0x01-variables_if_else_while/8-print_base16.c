@@ -11,20 +11,22 @@ int main(void)
 	char ltr;
 	
 	/* the CAP letters*/
-	ltr = 0;
-	while(ltr <= 9)
+	num = 0;
+	ltr = 'a';
+	
+	while(num <= 9)
 	{
-		putchar(ltr);
-		ltr++;
+		putchar(num + '0');
+		num++;
 	}
 	
-	ltr = 'a';
+	
 	while(ltr <= 'f')
 	{
 		putchar(ltr);
 		ltr++;
 	}
-	putchar("\n");
+	putchar('\n');
 	
 	return (0);
 }

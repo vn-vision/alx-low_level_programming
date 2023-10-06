@@ -1,5 +1,7 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /* if statement checks the value of n to give respnse */
 
 /* main - entry point */
@@ -12,17 +14,17 @@ int main(void)
 	
 	if(n>0)
 	{
-	printf(n, " is positive");
+		printf("%d is positive\n", n);
 	}
 	else
 	if(n<0)
 	{
-	printf(n, " is negative");
+		printf("%d is negative\n", n);
 	}
 	else
 	if(n==0)
 	{
-	printf(n, " is zero");
+		printf("%d is zero\n", n);
 	}
 	return (0);
 }

@@ -9,7 +9,7 @@
 int main(void)
 {
 	char _qe;
-	_qe = 'a'
+	_qe = 'a';
 	
 	do
 	{
@@ -21,5 +21,6 @@ int main(void)
 	}
 	while(_qe <= 'z');
 	
-	putchar("\n");
+	putchar('\n');
+	return (0);
 }

@@ -8,8 +8,10 @@
 
 int main(void)
 {
-	char ltr;
+	char ltr, _ltr;
 	ltr = 'a';
+	_ltr = 'A';
+	
 	while(ltr <= 'z')
 	{
 		putchar(ltr);
@@ -17,13 +19,12 @@ int main(void)
 	}
 	
 	/* the CAP letters*/
-	ltr = 'A';
-	while(ltr <= 'Z')
+	while(_ltr <= 'Z')
 	{
-		putchar(ltr);
-		ltr++;
+		putchar(_ltr);
+		_ltr++;
 	}
-	putchar("\n");
+	putchar('\n');
 	
 	return (0);
 }
