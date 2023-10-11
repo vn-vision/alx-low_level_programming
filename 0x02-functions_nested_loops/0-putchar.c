@@ -2,7 +2,7 @@
 
 /**
 * main - Entry point
-* Return : 0 (success)
+* Return: 0 (success)
 * print characters " _putchar " using putchar
 */
 
@@ -13,7 +13,7 @@ int main(void)
 
 	name = "_putchar";
 
-	for(i=0; name[i] != '\0'; i++)
+	for (i = 0; name[i] != '\0'; i++)
 	{
 		_putchar(name[i]);
 	}

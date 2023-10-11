@@ -2,13 +2,13 @@
 
 /**
 * main -Enry point
-* Return : 0 (success)
-* print_to_98 - a function to numbers to 98
+* Return: 0 (success)
+* print_to_98: - a function to numbers to 98
 *
 */
 
 
-void print_to_98 (int n)
+void print_to_98(int n)
 {
 	while (n != 98)
 	{
@@ -23,7 +23,7 @@ void print_to_98 (int n)
 		}
 		else
 		{
-			n --;
+			n--;
 		}
 
 	}

@@ -2,8 +2,8 @@
 
 /**
 * main - Entry point
-* Return : 0 (success)
-* print_alphabet_x10(void) prints the alphabet 10 times
+* Return: 0 (success)
+* print_alphabet_x10: -prints the alphabet 10 times
 *
 */
 
@@ -20,7 +20,8 @@ void print_alphabet_x10(void)
 			_putchar(fltr);
 			fltr++;
 		}
-
+		
+		putchar('\n');
 		num++;
 	}
 }
