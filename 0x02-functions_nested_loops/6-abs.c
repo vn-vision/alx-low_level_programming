@@ -3,7 +3,7 @@
 
 /**
 * _abs - get the aboslute number of an integer
-* @x: the value that function return the absolute number
+* @num: the value that function return the absolute number
 *
 * Description: return the required results
 *

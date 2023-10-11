@@ -2,8 +2,8 @@
 
 /**
 * add - add two values together
-* @x: first number
-* @y: second number
+* @a: first number
+* @b: second number
 *
 * Description: add first number with second number
 *
