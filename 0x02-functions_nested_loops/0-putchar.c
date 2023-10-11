@@ -9,10 +9,11 @@
 int main(void)
 {
 	char *name;
+	int i;
 
 	name = "_putchar";
 
-	for(int i=0; name[i] != '\0'; i++)
+	for(i=0; name[i] != '\0'; i++)
 	{
 		_putchar(name[i]);
 	}
