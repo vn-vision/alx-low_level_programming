@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
 * main -Entry point
@@ -15,8 +15,8 @@ int main(void)
 
 	n = add(89, 9);
 
-	putchar(n + '0');
-	putchar('\n')
+	_putchar(n + '0');
+	_putchar('\n')
 
 	return (0);
 }

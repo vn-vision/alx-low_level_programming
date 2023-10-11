@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
 * main -Enry point
@@ -23,9 +23,9 @@ void print_to_98 (int n)
 	while (n != 98)
 	{
 
-		putchar(n);
-		putchar(',');
-		putchar(' ');
+		_putchar(n);
+		_putchar(',');
+		_putchar(' ');
 
 		if (n < 98)
 		{
@@ -38,6 +38,6 @@ void print_to_98 (int n)
 
 	}
 
-	putchar(n);
-	putchar('\n');
+	_putchar(n);
+	_putchar('\n');
 }

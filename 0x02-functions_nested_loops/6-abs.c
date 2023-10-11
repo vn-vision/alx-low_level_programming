@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -15,20 +15,20 @@ int main(void)
 	int r;
 
 	r = _abs(-1);
-	putchar(r + '0');
-	putchar('\n');
+	_putchar(r + '0');
+	_putchar('\n');
 
 	r = _abs(0);
-	putchar(r + '0');
-	putchar('\n');
+	_putchar(r + '0');
+	_putchar('\n');
 
 	r = _abs(1);
-	putchar(r + '0');
-	putchar('\n');
+	_putchar(r + '0');
+	_putchar('\n');
 
 	r = _abs(98);
-	putchar(r + '0');
-	putchar('\n');
+	_putchar(r + '0');
+	_putchar('\n');
 
 	return (0);
 }

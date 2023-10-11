@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
 * main - Entry point
@@ -20,9 +20,9 @@ void print_alphabet(void)
 
 	while (fltr <='z')
 	{
-		putchar(fltr);
+		_putchar(fltr);
 		fltr++;
 	}
 
-	putchar('\n');
+	_putchar('\n');
 }

@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
 * main -Entry point
@@ -27,21 +27,21 @@ void times_table(void)
 
             if (j > 0)
             {
-                putchar(',');
-                putchar(' ');
+                _putchar(',');
+                _putchar(' ');
 
                 if (k < 10)
-                    putchar(' ');
+                    _putchar(' ');
             }
 
             if (k < 10)
-                putchar(k + '0');
+                _putchar(k + '0');
             else
             {
-                putchar(k / 10 + '0');
-                putchar(k % 10 + '0');
+                _putchar(k / 10 + '0');
+                _putchar(k % 10 + '0');
             }
         }
-        putchar('\n');
+        _putchar('\n');
     }
 }

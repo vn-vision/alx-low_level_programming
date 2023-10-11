@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
 * main -Entry point
@@ -25,18 +25,18 @@ void jack_bauer(void)
         for (minute = 0; minute < 60; minute++)
         {
 
-            putchar((hour / 10) + '0');
-            putchar((hour % 10) + '0');
+            _putchar((hour / 10) + '0');
+            _putchar((hour % 10) + '0');
 
 
-            putchar(':');
+            _putchar(':');
 
 
-            putchar((minute / 10) + '0');
-            putchar((minute % 10) + '0');
+            _putchar((minute / 10) + '0');
+            _putchar((minute % 10) + '0');
 
 
-            putchar('\n');
+            _putchar('\n');
         }
     }
 }
