@@ -4,6 +4,9 @@
 * main - Entry point
 * Return: 0 (success)
 * print_alphabet_x10: -prints the alphabet 10 times
+* print_alphabet_x10 - print out alphabets 10 times
+*
+* Description: return the required results
 *
 */
 
@@ -21,7 +24,7 @@ void print_alphabet_x10(void)
 			fltr++;
 		}
 		
-		putchar('\n');
+		_putchar('\n');
 		num++;
 	}
 }

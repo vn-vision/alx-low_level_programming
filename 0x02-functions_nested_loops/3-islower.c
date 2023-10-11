@@ -3,10 +3,12 @@
 
 
 /**
-* main -Entry point
-* Return: 0 (success)
-* _islower() - function to check for lowercase characters
+*_islower - to check for lower case of int c
+*@c: value to be check for by the function
 *
+*Description: (int c) use to check the required results
+*
+*Return: return the integer 0
 */
 
 

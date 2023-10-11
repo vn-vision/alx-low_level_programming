@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-* main -Entry point
-* Return: 0 (success)
-* print_sign: - prints the sign of a number
-* Returns 1 and prints + if n is greater than zero
-* Returns 0 and prints 0 if n is zero
-* Returns -1 and prints - if n is less than zero
+* print_sign - print out the sign of a number
+* @n: value to check when using the function
+*
+* Description: print out the required results
+*
+* Return: return integer value 0
 *
 */
 

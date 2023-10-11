@@ -2,9 +2,12 @@
 #include <stdlib.h>
 
 /**
-* main - Entry point
-* Return: 0 (Success)
-* _abs: - computes the absolute value of integers
+* _abs - get the aboslute number of an integer
+* @x: the value that function return the absolute number
+*
+* Description: return the required results
+*
+* Return: return integer value 0
 *
 */
 

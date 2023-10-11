@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
-* main -Entry point
-* Return: 0 (Success)
-* jack_bauer: - prints minutes from midnight
+* jack_bauer - print out every minutes
+*
+* Description: print out the required results
+*
+* Return: return the integer value 0
 *
 */
-
 
 void jack_bauer(void)
 {

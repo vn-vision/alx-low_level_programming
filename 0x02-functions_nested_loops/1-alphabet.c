@@ -4,6 +4,10 @@
 * main - Entry point
 * Return: 0 (success)
 * print_alphabet: - print lowercase alphabets.
+* print_alphabet - print alphabets
+*
+* Description: print_alphabet use to print a to z
+*
 */
 
 

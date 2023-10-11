@@ -2,9 +2,12 @@
 #include <ctype.h>
 
 /**
-* main - Entry point
-* Return: 0 (success)
-* _isalpha - returns 1 if c is a letter upper / lower else 0
+* _isalpha - To check for alphabetical characters
+* @c: value to be checked by the funtion
+*
+* Description: return the required results
+*
+* Return: return the integer value 0
 *
 */
 
