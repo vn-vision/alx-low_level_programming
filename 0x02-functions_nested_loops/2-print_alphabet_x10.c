@@ -12,7 +12,6 @@ void print_alphabet_x10(void);
 int main(void)
 {
 	print_alphabet_x10();
-
 	return (0);
 }
 
@@ -24,13 +23,13 @@ void print_alphabet_x10(void)
 	{
 		char fltr = 'a';
 
-	while (fltr <= 'z')
-	{
-		putchar(fltr);
-		fltr++;
-	}
-		
+		while (fltr <= 'z')
+		{
+			putchar(fltr);
+			fltr++;
+		}
+
 		num++;
 	}
-	
+
 }
