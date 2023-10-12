@@ -1,21 +1,34 @@
 #include "main.h"
 
 /**
- * print_diagonal - print a straight line using putchar of n size
- * @n: size of line
+ * print_diagonal: draws a diagonal line on the terminal
+ * @n: number of times the character\should be printed
  */
 
 void print_diagonal(int n)
 {
-	int x;
-	int y;
-
 	if (n <= 0)
-		_putchar('\n');
-	for (y = 0; y < n; y++)
 	{
-		for (x = y; x > 0; x--)
-			_putchar(' ');
-		_putchar('\\');
 		_putchar('\n');
 	}
+	else
+	{
+		int i, j;
+
+		for (i = 1; i < n; i++)
+		{
+			for (j = 0; j < n; j++)
+			{
+				if (j == i)
+				{
+					_putchar('\\');
+				}
+				else if (j <= i)
+				{
+					_putchar(' ');
+				}
+				_putchar('\n');
+			}
+		}
+	}
+}
