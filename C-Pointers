@@ -1,0 +1,14 @@
+Special C characters:	use.
+
+%d 			 print integers
+%f 			 print floats
+%lu 			 print unsigned int, checking sizeof
+%p 			 print adrresses with printf
+
+				{printf("Address of n is %p", &n)}
+&			 unary operator,  check address of variable.
+
+* 			 declare variable of pointer to something (int *n)
+			 dereference pointers ( *n = 98)
+
+ 
