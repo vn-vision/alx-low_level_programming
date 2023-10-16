@@ -5,7 +5,8 @@
 * _strlen -the functions calcuates length of a string
 * description: takes char pointer parameters
 * @s: first char pointer
-* return: void -the length of string
+* @s: pointer to the string to check
+* Return: void
 */
 
 int _strlen(char *s)
