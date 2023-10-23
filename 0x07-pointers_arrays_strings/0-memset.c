@@ -1,23 +1,16 @@
 #include "main.h"
-
 /**
-* _memset - assigns first n char of s value of b
-* description: takes three parameters
-* @s: buffer to assign values
-* @b: value to assign to buffer
-* @n: number of character to change
-* Return: pointer to memory area s
-*
-*/
-
+ * _memset - fills memory with a constant byte,
+ * @s: memory area.
+ * @b: constant byte.
+ * @n: bytes filled.
+ * Return: the pointer to dest.
+ */
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i;
+	unsigned int i;
 
 	for (i = 0; i < n; i++)
-	{
-		s[i] = b;
-	}
-
+		*(s + i) =  b;
 	return (s);
 }
