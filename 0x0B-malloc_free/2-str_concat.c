@@ -14,8 +14,10 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char  *combo;
+	if (s1 == NULL) s1 = "";
+	if (s2 == NULL) s2 = "";
 
+	char  *combo;
 	unsigned int i, j;
 
 	combo = malloc(strlen(s1) + strlen(s2) + 1);
@@ -33,6 +35,8 @@ char *str_concat(char *s1, char *s2)
 		}
 
 		combo[i + j] = '\0';
+
+		free(combo);
 
 		return (combo);
 
