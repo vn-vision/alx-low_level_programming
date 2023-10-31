@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
 * str_concat - point to new allocated space
@@ -15,14 +14,15 @@
 char *str_concat(char *s1, char *s2)
 {
 	char  *combo;
-	unsigned int i, j;
 
-	combo = malloc(strlen(s1) + strlen(s2) + 1);
+	unsigned int i, j;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+
+	combo = malloc(strlen(s1) + strlen(s2) + 1);
 
 	if (combo != NULL)
 	{
@@ -37,8 +37,6 @@ char *str_concat(char *s1, char *s2)
 		}
 
 		combo[i + j] = '\0';
-
-		free(combo);
 
 		return (combo);
 
