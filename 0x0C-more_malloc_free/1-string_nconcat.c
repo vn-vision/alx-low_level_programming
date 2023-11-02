@@ -2,56 +2,37 @@
 #include <stdlib.h>
 #include <string.h>
 
-/**
-* string_nconcat - point to a new space
-* description: concar s1 with s2's first n
-* @s1: string 1
-* @s2: string 2
-* @n: n bytes to copy
-* Return: pointer to memory
-*
-*/
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j, len;
+	unsigned int i, j;
 	char *nconc;
+	unsigned int len_s1 = (s1 == NULL) ? 0 : strlen(s1);
+	unsigned int len_s2 = (s2 == NULL) ? 0 : strlen(s2);
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
+	// If n is greater or equal to the length of s2, use the entire string s2
+	if (n >= len_s2)
+	{
+		n = len_s2;
+	}
 
-	nconc = malloc(strlen(s1) + n + 1);
+	nconc = malloc(len_s1 + n + 1);
 
 	if (nconc == NULL)
 	{
 		return (NULL);
 	}
 
-	for (j = 0; s1[j] != '\0'; j++)
+	for (j = 0; j < len_s1; j++)
 	{
 		nconc[j] = s1[j];
-
 	}
 
-
-	len = strlen(s2);
-
-	if (n >= len)
-	{
-		n = len;
-	}
-
-	for (i = 0; s2[i] != '\0'; i++)
+	for (i = 0; i < n; i++)
 	{
 		nconc[j + i] = s2[i];
-
 	}
-
 
 	nconc[j + i] = '\0';
 
 	return (nconc);
-
 }
