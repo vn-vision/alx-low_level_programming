@@ -3,52 +3,48 @@
 #include <stdio.h>
 
 /**
-* print_all -prints anything
-* description: ints, strings, floats
+* print_all - prints anything
 * @format: data type of arguments
-* Return: void
 */
-
 void print_all(const char * const format, ...)
 {
-	va_list nArgs;
+	va_list args;
+	char *str;
+	int i = 0, flag = 0;
 
-	va_start(nArgs, format);
-	while (*format != '\0')
+	va_start(args, format);
+
+	while (format && format[i])
 	{
-		if (*format == '%')
+		switch (format[i])
 		{
-			format++;
-
-			switch (*format)
-			{
-				case 'd':
-					printf("%d", va_arg(nArgs, int));
-					break;
-				case 'c':
-					printf("%c", va_arg(nArgs, char));
-					break;
-				case 'f':
-					printf("%f", va_arg(nArgs, double));
-					break;
-				case 's':
-				{
-					char *str = va_arg(nArgs, char *);
-
-					if (str == NULL)
-						printf("(nil)");
-					printf("%s", str);
-					break;
-				}
-				default:
-					putchar(*format);
-					break;
-			}
+			case 'c':
+				printf("%c", va_arg(args, int));
+				flag = 1;
+				break;
+			case 'i':
+				printf("%d", va_arg(args, int));
+				flag = 1;
+				break;
+			case 'f':
+				printf("%f", va_arg(args, double));
+				flag = 1;
+				break;
+			case 's':
+				str = va_arg(args, char *);
+				if (!str)
+					str = "(nil)";
+				printf("%s", str);
+				flag = 1;
+				break;
 		}
-		putchar(*format);
+		if (format[i + 1] && flag)
+			printf(", ");
 
-		format++;
+		flag = 0;
+		i++;
 	}
-	putchar('\n');
-	va_end(nArgs);
+
+	printf("\n");
+	va_end(args);
 }
