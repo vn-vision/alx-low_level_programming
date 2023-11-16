@@ -2,7 +2,7 @@
 
 Dive into singly-linked lists.
 	:they're made up of nodes |Data|Next
-	
+
 Linked lists operations:
 	: Insertion - at the beginning.
 	  Deletion - at the beginning of list
