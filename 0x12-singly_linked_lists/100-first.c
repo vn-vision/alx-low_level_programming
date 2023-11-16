@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-/* This is the constructor function */
+/**
+* bmain - constructor function
+*/
 void __attribute__ ((constructor)) bmain()
 {
 	printf("You're beat! and yet, you must allow");
