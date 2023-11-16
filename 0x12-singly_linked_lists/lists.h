@@ -19,7 +19,7 @@ typedef struct list_s
 	struct list_s *next;
 } list_t;
 
-int _putchar(int c);
+int _putchar(char c);
 size_t print_lists(const list_t *h);
 size_t list_len(const list_t *h);
 
