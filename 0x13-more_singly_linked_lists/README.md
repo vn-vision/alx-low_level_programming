@@ -2,4 +2,3 @@
 
 Getting to learn Data Structures.
 	:- How to use linked lists.
-	
