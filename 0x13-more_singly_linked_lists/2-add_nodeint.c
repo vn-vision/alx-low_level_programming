@@ -23,7 +23,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 		*head = new_node;
 		printf("%d", new_node->n);
 
-		return (new_node);
+		return (*head);
 	}
 
 	return (NULL);
