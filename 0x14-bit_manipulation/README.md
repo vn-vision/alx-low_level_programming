@@ -6,3 +6,5 @@
 	:NOT (~): Bitwise NOT operation is used to flip each bit, changing 0s to 1s and 1s to 0s.
 	:Left Shift (<<): Shifts the bits to the left by a specified number of positions, filling the vacant positions with 0.
 	:Right Shift (>>): Shifts the bits to the right by a specified number of positions, filling the vacant positions with the sign bit (for signed integers) or 0 (for unsigned integers).
+
+C is fun
