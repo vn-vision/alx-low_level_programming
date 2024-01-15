@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # creates object files in current dir
 gcc -c -fPIC *.c
