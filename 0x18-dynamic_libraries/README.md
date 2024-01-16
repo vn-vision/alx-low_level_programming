@@ -2,6 +2,7 @@
 	advantage over static libraries: Saves on size,
 					 Don't need to recompile to access the updated executable
 
+# Creating a dynamic library
 Create Position Independent Code: gcc -fPIC -c < .c file >
 		: produces the object file < .o extension>
 create a dynamic library: gcc -shared -o <libdynamic.so> <first object file> <sec object file> # you can always change the name of the .so file
@@ -25,3 +26,12 @@ ldconfig: configures dynamic linker tun-time bindings. it is typically used afte
 
 # the executable
 1-create_dynamic_lib.sh --> creates a shared library liball.so from the *.c files in the present directory.
+
+# Code injection: Win the Giga Millions!
+The system is vulnerable to code injection by preloading dynamic libraries.
+By preloading a custom random number generator, you can insert the winning jackpot
+
+# 101-make_me_win.sh 
+is an executable that gets the custom shared library.
+it then preloads it where the system runs.
+
