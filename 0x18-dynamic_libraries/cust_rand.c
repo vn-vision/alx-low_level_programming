@@ -13,10 +13,10 @@ int rand()
 	unsigned int a_size =  6;
 	static int result = 0;
 
-	result = sequence[index] - 1;
+	result = sequence[index];
 	index++;
 	
-	if (index >= a_size - 1)
+	if (index >= a_size)
 		index = 0;
 	return result;
 }
