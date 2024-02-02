@@ -1,3 +1,4 @@
+#include "hash_tables.h"
 #include <stdio.h>
 
 /**
@@ -16,7 +17,7 @@ unsigned long int hash_djb2(const unsigned char *str)
 	
 	while((c = *str++))
 	{
-		hash = ((hash << 5) + c;)
+		hash = ((hash << 5) + hash) + c;
 	}
 
 	return (hash);
