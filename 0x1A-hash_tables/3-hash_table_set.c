@@ -20,7 +20,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		fprintf(stderr, "The hash table is NULL");
 		return (0);
 	}
-	if (key == NULL)
+	if (key == NULL || *key == '\0')
 	{
 		fprintf(stderr, "key cannot be an empty string");
 		return (0);
@@ -37,19 +37,34 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new->key = strdup(key);
 	new->value = strdup(value);
 	new->next = NULL;
-	while (cur_array != NULL)
+	
+	if (cur_array == NULL)
+		ht->array[index] = new;
+	else
 	{
-		if (strcmp(cur_array->key, key))
+		if (strcmp(cur_array->key, key) == 0)
 		{
 			/** add pair to the start of the node */
 			new->next = cur_array->next;
-			cur_array->next = new;
+			ht->array[index] = new;
+			free(cur_array);
 			return (1);
 		}
-		cur_array = cur_array->next;
+		while (cur_array->next != NULL && strcmp(cur_array->next->key, key) != 0)
+			cur_array = cur_array->next;
+		if (strcmp(cur_array->key, key) ==0)
+		{
+			new->next = cur_array->next->next;
+			cur_array->next = new;
+			free(cur_array->key);
+			free(cur_array->value);
+			free(cur_array);
+		}
+		else
+		{
+			new->next = ht->array[index];
+			ht->array[index] = new;
+		}
 	}
-	/** key is new add it to array */
-	new->next = cur_array;
-	cur_array = new;
 	return (1);
 }
