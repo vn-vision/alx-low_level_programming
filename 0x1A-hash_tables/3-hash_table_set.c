@@ -53,3 +53,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	ht->array[index] = new;
 	return (1);
 }
+
+/**
+ * free_node - Free a node.
+ * @node: Node to free.
+ *
+ * Return: Void.
+ */
+void free_node(hash_node_t *node)
+{
+	free(node->key);
+	free(node->value);
+	free(node);
+}
+
